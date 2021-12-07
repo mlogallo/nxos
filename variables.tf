@@ -1,10 +1,10 @@
-    variable "user" {
+variable "user" {
   description = "Login information"
   type        = map
   default     = {
     username = "admin"
     password = "Pasword1234!"
-    url      = "https://76.8.22.229/"
+    url      = "https://76.8.22.229"
   }
 }
 variable "tenant" {
