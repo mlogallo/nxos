@@ -35,7 +35,7 @@ resource "mso_tenant" "terraform_tenant" {
     resource "mso_schema" "schema_obj" {
         template_name = "Template1"
         name          = var.schema
-        tenant_id     = mso_tenant.tenant_obj.id
+        tenant_id     = data.mso_tenant.tenant_obj
     }
 
 
