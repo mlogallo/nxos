@@ -17,15 +17,6 @@ provider "mso" {
   insecure = true
 }
 
-variable "user" {
-  description = "Login information"
-  type        = map
-  default     = {
-    username = "admin"
-    password = "Pasword1234!"
-    url      = "https://76.8.22.229/"
-  }
-}
 
 # Define an MSO Tenant Resource.
 resource "mso_tenant" "terraform_tenant" {
