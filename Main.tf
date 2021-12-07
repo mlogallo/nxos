@@ -27,6 +27,13 @@ variable "user" {
   }
 }
 
+# Define an MSO Tenant Resource.
+resource "mso_tenant" "terraform_tenant" {
+    name         = "js_10018"
+    display_name = "js_10018"
+    description  = "This tenant is created by terraform"
+}
+
 
 # Define an MSO Schema Resource.
     resource "mso_schema" "schema_obj" {
