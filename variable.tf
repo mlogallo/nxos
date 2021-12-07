@@ -1,4 +1,13 @@
-    variable "tenant" {
+    variable "user" {
+  description = "Login information"
+  type        = map
+  default     = {
+    username = "admin"
+    password = "Pasword1234!"
+    url      = "https://76.8.22.229/"
+  }
+}
+variable "tenant" {
         type        = string
         default     = "js_10018"
         description = "The MSO tenant to use for this configuration"
