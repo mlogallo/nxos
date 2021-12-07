@@ -8,10 +8,6 @@
         type    = string
         default = "terraform_schema"
     }
-    variable "tenant" {
-        type    = string
-        default = "js_10018"
-    }
     variable "vrf" {
         type    = string
         default = "prod_vrf"
