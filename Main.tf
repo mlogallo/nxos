@@ -23,6 +23,13 @@ resource "mso_tenant" "terraform_tenant" {
     display_name = "js_10018"
     description  = "This tenant is created by terraform"
 }
+
+# Define an MSO Tenant Resource.
+data "mso_tenant" "tenant_obj" {
+    name         = var.tenant
+    display_name = var.tenant
+}
+
 # Define an MSO Schema Resource.
 resource "mso_schema" "schema_obj" {
     template_name = "Template1"
