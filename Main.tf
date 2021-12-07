@@ -17,11 +17,6 @@ provider "mso" {
   insecure = true
 }
 
-# Define an MSO Tenant Resource.
-data "mso_tenant" "tenant_obj" {
-    name         = var.tenant
-    display_name = var.tenant
-}
 
 # Define an MSO Schema Resource.
 resource "mso_schema" "schema_obj" {
