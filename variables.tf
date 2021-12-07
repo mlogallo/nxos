@@ -9,7 +9,7 @@ variable "user" {
 }
 variable "tenant" {
     type        = string
-    default     = "js_10018"
+    default     = "js_10020"
     description = "The MSO tenant to use for this configuration"
 }
 
