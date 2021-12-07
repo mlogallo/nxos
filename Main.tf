@@ -19,8 +19,8 @@ provider "mso" {
 
 # Define an MSO Tenant Resource.
 resource "mso_tenant" "terraform_tenant" {
-    name         = "js_10018"
-    display_name = "js_10018"
+    name         = "js_10020"
+    display_name = "js_10020"
     description  = "This tenant is created by terraform"
 }
 
