@@ -1,4 +1,34 @@
- # Define an MSO Schema Resource.
+terraform {
+  required_providers {
+    mso = {
+      source = "CiscoDevNet/mso"
+    }
+  }
+}
+
+# Configure the provider with your Cisco MSO credentials.
+provider "mso" {
+  # MSO Username
+  username = var.user.username
+  # MSO Password
+  password = var.user.password
+  # MSO URL
+  url      = var.user.url
+  insecure = true
+}
+
+variable "user" {
+  description = "Login information"
+  type        = map
+  default     = {
+    username = "admin"
+    password = "Pasword1234!"
+    url      = "https://76.8.22.229/"
+  }
+}
+
+
+# Define an MSO Schema Resource.
     resource "mso_schema" "schema_obj" {
         template_name = "Template1"
         name          = var.schema
