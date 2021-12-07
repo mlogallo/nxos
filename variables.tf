@@ -3,7 +3,7 @@ variable "user" {
   type        = map
   default     = {
     username = "admin"
-    password = "Pasword1234!"
+    password = "Password1234!"
     url      = "https://76.8.22.229"
   }
 }
