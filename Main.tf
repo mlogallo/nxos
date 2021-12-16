@@ -17,7 +17,7 @@ provider "mso" {
   insecure = true
 }
 
-# Define an MSO Tenant Resource.
+# Define an MSO Tenant Resource..
 resource "mso_tenant" "terraform_tenant" {
     name         = "js_10021"
     display_name = "js_10021"
